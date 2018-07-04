@@ -1,4 +1,6 @@
-/* GLOBAL STYLES
+---
+---
+//* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
@@ -100,4 +102,30 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+.imgratio {
+    max-width:500px;
+    max-height:500px;
+      width: expression(this.width > 100 ? "100px" : true);
+  height: expression(this.height > 100 ? "100px" : true);
+}
+
+.botomImage {
+  width : 500px;
+  height: 500px;
+}
+@media screen and (max-width: 800px) {
+.breakClass {
+  display: none;
+}
+
+}
+.navbar{
+  background-color: {{ site.data.colors.Nav_background }};
+}
+.nav-link{
+  color: {{ site.data.colors.Nav_link }};
+}
+.navbar-nav .active>.nav-link{
+  color: {{ site.data.colors.Nav_active_link }};
 }

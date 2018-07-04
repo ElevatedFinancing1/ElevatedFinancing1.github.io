@@ -24,29 +24,31 @@ title: Elevated Financing | Financing for Commercial and Investment Properties
  <br>
           <br>
           <br>
-          <div class="container marketing">
-   <div class="row featurette">
+      <div class="container marketing">
+        {% for data in site.data.homepage %}
+        <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Why choose Elevated Financing?</h2>
-            <p class="lead">Elevated Financing leverages a network of lenders, industry expertise, and dedication to ensure the best financing options for our clients. Elevated Financing offers a unique, consultative service that guides customers through every step of the financing process.
-</p>
+            <h2 class="featurette-heading">{{ data.Heading_text }}</h2>
+            <p class="lead">{{ data.Discription }}</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="/assets/img/apartment.jpg" data-holder-rendered="true">
+            <img class="featurette-image img-fluid mx-auto" src="/assets/img/{{ data.Img }}" data-holder-rendered="true">
           </div>
 
         </div>
-        <br>
+          <br>
           <br>
           <br>
                <hr class="featurette-divider">
           <br>
           <br>
           <br>
+        {% endfor %}
+        <!-- {{ endfor }}
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">What makes Elevated Financing unique?</h2>
-            <p class="lead">In addition to a unique personalized service, Elevated Financing provides a large variety of financing options for each property type at a low cost. The company prides its self in offering financing options for investors of all qualifications.</p>
+            <p class="lead">{{  }}</p>
           </div>
 
 
@@ -60,12 +62,11 @@ title: Elevated Financing | Financing for Commercial and Investment Properties
                <hr class="featurette-divider">
           <br>
           <br>
-          <br>
-        <div class="row featurette">
+          <br> -->
+        <!-- <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Elevated Financing LLC’s mission.</span></h2>
-            <p class="lead">Elevated Financing LLC’s mission is to secure the best financing options though a personalized, consultative, and informative process that leads to the highest level of customer success. The best way to grow business is to hold the company to the highest professional standard. Elevated Financing prides its self in holding the values of honesty, integrity, and transparency to the highest level in all aspects of our business. The company strives to create a positive experience where all customers feel respected and valued.
-</p>
+            <p class="lead">{{ site.data.text.Elevated_Financing_LLCs_mission }}</p>
           </div>
           <div class="col-md-5">
           <br class="breakClass">
@@ -74,7 +75,7 @@ title: Elevated Financing | Financing for Commercial and Investment Properties
           <br class="breakClass">
            <img class="featurette-image img-fluid mx-auto" src="/assets/img/Renovation.jpg" data-holder-rendered="true" onload="OnImageLoad(event, 400, 500, false);">
           </div>
-        </div>
+        </div> -->
 
         </div>
     </main>
