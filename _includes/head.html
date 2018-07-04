@@ -18,6 +18,14 @@
      <script type="text/javascript">
 function returnHomeWidth(t,e){var o=$(document).width();return console.log("Screen width: "+o),1==e?(console.log("after math.floor greater than"+o),$(".carousel-img").css("height",t.height+""),$(".carousel-img").css("width",t.width+""),$(".carousel-img").css("top",t.targettop+""),$(".carousel-img").css("left",t.targetleft+"")):($(".botomImage").css("width",t.width+"px"),$(".botomImage").css("height",t.height+"px")),null}function OnImageLoad(t,e,o,h){var i=t.currentTarget;console.log(i);var r=$(i).width(),l=$(i).height(),a=null,g=null;null==e&&null==o?(a=$(i).parent().width(),g=$(i).parent().height()):(a=e,g=o);var n=ScaleImage(r,l,a,g,!1);console.log(h),1==h&&$(window).resize(function(){console.log("Resize function is happening!!");var t=$(i).width(),e=$(i).height(),o=$(i).parent().width(),h=$(i).parent().height(),r=ScaleImage(t,e,o,h,!1);console.log("Resize!! Expected result: "+r.height+"Expected Width: "+r.width,"Result top:"+r.targettop,"result left"+r.targetleft),console.log("Resize orginal dimensions!!Image width: "+t+"Image height: "+e+"Target width:"+o+"Target height"+h),returnHomeWidth(r,!0)}),console.log("On load!! Expected result: "+n.height+"Expected Width: "+n.width,"Result top:"+n.targettop,"result left"+n.targetleft),returnHomeWidth(n,h)}function ScaleImage(t,e,o,h,i){var r={width:0,height:0,fScaleToTargetWidth:!0};if(0>=t||0>=e||0>=o||0>=h)return console.log("Returning result! "),r;var l=o,a=e*o/t,g=t*h/e,n=h,s=g>o;return s=s?i:!i,s?(r.width=Math.floor(l),r.height=Math.floor(a),r.fScaleToTargetWidth=!0):(r.width=Math.floor(g),r.height=Math.floor(n),r.fScaleToTargetWidth=!1),r.targetleft=Math.floor((o-r.width)/2),r.targettop=Math.floor((h-r.height)/2),r}
     </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      if ((location.pathname) !== ""){
+        $('.navbar-nav a').removeClass('active');
+        $('.navbar-nav a[href="' + location.pathname + '"]').addClass('active');
+      }
+    });
+    </script>
 <noscript>
   <META HTTP-EQUIV="Refresh" CONTENT="0;URL=ShowErrorPage.html">
 </noscript>
