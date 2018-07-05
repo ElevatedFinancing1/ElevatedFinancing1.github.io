@@ -6,3 +6,8 @@ fields:
   name: layout
   label: Layout
   description: give layout name
+  default: page
+- type: text
+  label: Page Link
+  name: permalink
+  description: " This is for your page link that you need to declare in menu"
