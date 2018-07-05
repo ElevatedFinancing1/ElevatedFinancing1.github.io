@@ -15,3 +15,5 @@ fields:
   label: Images
   name: img
   description: You need to upload images
+pages:
+- testing-page.html
