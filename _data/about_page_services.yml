@@ -1,9 +1,9 @@
-
-
-- service: "Multifamily properties"
-- service: "Retail properties"
-- service: "Industrial properties"
-- service: "Office properties"
-- service: "New construction"
-- service: "Fix and flip projects"
-- service: "Special case financing"
+---
+- service: Test
+- service: Multifamily properties
+- service: Retail properties
+- service: Industrial properties
+- service: Office properties
+- service: New construction
+- service: Fix and flip projects
+- service: Special case financing
