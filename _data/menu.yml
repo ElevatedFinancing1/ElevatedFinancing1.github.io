@@ -2,6 +2,6 @@
 - Name: Home
   link: "/"
 - Name: About
-  link: "/about/"
+  link: "/about/index.html"
 - Name: Contact Us
   link: "/contactus/"
