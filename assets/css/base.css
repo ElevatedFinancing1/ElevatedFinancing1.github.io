@@ -7,7 +7,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  /* color: #5a5a5a; */
 }
 
 
@@ -131,4 +131,10 @@ body {
 }
 .link:hover{
   color: {{ site.data.colors.Nav_link_hover }};
+}
+p {
+  color: {{ site.data.colors.Text_color }};
+}
+h1, h2, h3, h4, h5, h6 {
+  color: {{ site.data.colors.Heading_color }};
 }
